@@ -30,12 +30,12 @@ void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
-  cara= loadImage("images.jpg");
+  cara= loadImage("rorqual.png");
 }
 
 void draw()
 {
-  background(20,200,255);
+  background(255,0,0);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
