@@ -18,24 +18,24 @@ class Globo
   void dibujate()
   {
       ellipse(x,y,100,100);
-      image(cara,x-25,y-25,50,50);
+      image(ballenaFea,x+50,y,100,20);
   }
   
 }
-PImage cara;
+PImage ballenaFea;
 ArrayList<Globo> globos;
 
 
 void setup()
 {
-  size(640,480);
+  size(800,100);
   globos = new ArrayList<Globo>();  
-  cara= loadImage("images.jpg");
+  ballenaFea= loadImage("images.jpg");
 }
 
 void draw()
 {
-  background(20,200,255);
+  background(36,0,69);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
